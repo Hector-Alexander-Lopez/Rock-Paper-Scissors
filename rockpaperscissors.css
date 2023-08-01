@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(29, 18, 34);
+}
+
+/* Small  and Large Desktop cover */
+
+.page {
+    background-image: url(images/3way-battle.jpg);
+    background-color: rgb(29, 18, 34);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: -200px center; */
+    font-family: VT323;
+}
+
+.title{
+    font-size: 75px;
+    margin-bottom: 0;
+}
+
+.title, .choose, .resultBelow, h3 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black
+}
+
+.choose{
+    font-size: 2em;
+}
+
+.rock, .paper, .scissors {
+    height: cover;
+    width: 100%;
+}
+
+.rocky, .sheet, .snips{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.rocky{
+    margin-right: 20px;
+}
+
+.snips{
+    margin-left: 80px;
+}
+
+
+.mainSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 300px;
+}
+
+.character { 
+    width: 100%;
+} 
+
+button {
+    display: flex;
+    justify-self: center;
+    font: white;
+    background-color: gold;
+    border-radius: 15px;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+
+#result{
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    font-size: 60px;
+    /* color: yellow; */
+}
+
+.scoreboard-main{
+    display: flex;
+    justify-content: center;
+}
+
+#playerScore, #botScore, .scoreboard > p{
+    margin: 0; 
+    padding: 0;
+}
+
+.scoreboard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 1.25em;
+    height: 100px;
+    background: url(images/scoreboard-background.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+}
+
+.win-text {
+    color: rgb(28, 247, 28);
+}
+
+.lose-text {
+    color: red;
+}
+
+.tie-text {
+    color: yellow;
+}
+
+.reset{
+    display: flex;
+    justify-content: center;
+    font-size: .75em;
+    -webkit-text-stroke-width: .25px;
+    -webkit-text-stroke-color: white; 
+    color: yellow;
+    padding-top: 3px;
+}
+
+@media only screen and (max-width: 1119.99px) {
+    .page {
+        background-size: contain;
+    }
+
+    .title{
+        font-size: 2em;
+    }
+
+    .choose{
+        font-size: 1em;
+    }
+
+    .mainSection{
+        height: 160px;
+    }
+
+    .snips{
+        margin: 0;
+    }
+
+    .rock, .paper, .scissors {
+        height: 2em;
+        width: 100%;
+    }
+
+    .result-section{
+        display: flex;
+        justify-content: center;
+    }
+
+    #result{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 50px;
+        font-size: 1.5em;
+        background: rgba(41, 41, 41, 0.8);
+       
+    }
+
+    .scoreboard{
+        font-size: 1em;
+    }
+
+
+
+
+}

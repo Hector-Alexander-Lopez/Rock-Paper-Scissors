@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors
+    </title>
+    <link rel="stylesheet" href="rockpaperscissors.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="page">
+        <p class="title">Rock Paper Scissors</p>
+
+        <p class="choose">Choose Your Weapon</p>
+        <section class="mainSection">
+            <section class="rock"><img class="character rocky" src="images/rock.png" alt="rock"
+                    onclick="playGame('rock')">
+            </section>
+            <section class="paper"><img class="character sheet" src="images/paper.png" alt="paper"
+                    onclick="playGame('paper')"></section>
+            <section class="scissors"><img class="character snips" src="images/scissors.png" alt="scissors"
+                    onclick="playGame('scissors')"></section>
+        </section>
+
+        <!-- <p class="resultBelow">Result</p> -->
+
+
+        <section class="result-section">
+            <section id="result"></section>
+        </section>
+
+
+        <section class="scoreboard-main">
+            <section class="scoreboard">
+                <p>Player Score: <span id="playerScore">0</span></p>
+                <p>Bot Score: <span id="botScore">0</span></p> &nbsp;
+                <p class="reset">Refresh Page To Reset The Score</p>
+            </section>
+        </section>
+
+    </section>
+
+
+
+
+
+    <script src="game.js"></script>
+
+</body>
+
+
+
+</html>
