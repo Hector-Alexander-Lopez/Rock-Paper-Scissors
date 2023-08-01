@@ -6,14 +6,11 @@ body{
     background-color: rgb(29, 18, 34);
 }
 
-/* Small  and Large Desktop cover */
-
 .page {
     background-image: url(images/3way-battle.jpg);
     background-color: rgb(29, 18, 34);
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-position: -200px center; */
     font-family: VT323;
 }
 
@@ -65,16 +62,6 @@ body{
     width: 100%;
 } 
 
-/* button {
-    display: flex;
-    justify-self: center;
-    font: white;
-    background-color: gold;
-    border-radius: 15px;
-    border-color: transparent;
-    cursor: pointer;
-} */
-
 .result-section{
     display: flex;
     justify-content: center;
@@ -87,7 +74,7 @@ body{
     padding: 30px 0;
     font-size: 45px;
     background: rgba(41, 41, 41, 0.8);
-    width: 40%;
+    width: 20%;
 }
 
 .scoreboard-main{
@@ -135,6 +122,67 @@ body{
     -webkit-text-stroke-color: white; 
     color: yellow;
     padding-top: 3px;
+}
+
+@media only screen and (min-width: 1136px){
+
+    .title{
+        font-size: 3.5em;
+        padding-top: 40px;
+    }
+
+    .mainSection{
+        height: 160px;
+        padding-bottom: 500px;
+    }
+
+}
+
+@media only screen and (min-width: 930px) and (max-width: 1135px) {
+    .page {
+        background-size: contain;
+    }
+
+    .title{
+        font-size: 3.5em;
+        padding-top: 40px;
+    }
+
+    .choose{
+        font-size: 2em;
+    }
+
+    .mainSection{
+        height: 160px;
+        padding-bottom: 465px;
+    }
+
+    .snips{
+        margin: 0;
+    }
+
+    .rock, .paper, .scissors {
+        height: 2em;
+        width: 100%;
+    }
+
+    #result{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 33.330%;
+        height: 50px;
+        font-size: 2.5em;
+       
+    }
+
+    .scoreboard{
+        font-size: 1.5em;
+    }
+
+    .scoreboard-main , .result-section{
+        margin-right: 50px;
+    }
 }
 
 @media only screen and (min-width: 819px) and (max-width: 929.99px) {
@@ -273,6 +321,7 @@ body{
 
     .title{
         font-size: 2em;
+        padding-top: 10px;
     }
 
     .choose{
@@ -281,7 +330,7 @@ body{
 
     .mainSection{
         height: 160px;
-        padding-bottom: 180px;
+        padding-bottom: 170px;
     }
 
     .snips{
@@ -305,5 +354,6 @@ body{
     .scoreboard{
         font-size: 1em;
     }
+
 
 }
